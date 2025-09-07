@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+        display: flex;
+        flex-direction: column;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: red;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        header{
+        display: flex;
+        background-color: rgb(0, 36, 125);
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        }
+
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            text-align: center;
+            color: white;
+        }
+
+        main{
+            display: flex;
+            margin: 52px auto 0;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+
+        p{
+            text-align: justify;
+        }
+
+        .ukFlag_container{
+            display: flex;
+            justify-content: center;
+            align-items: center;     
+        }       
+
+        [alt="UK flag"]{
+            width: 500px;
+            margin-top: 3.7rem;
+        }
+
+        p + h2, .flags_container + h2, .ukFlag_container + p{
+            margin-top: 45px;
+        }
+
+        .britishIslesMap_container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 50px;
+        }
+
+        article{
+            padding-right: 40px;
+        }
+
+        .flags_container{
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            width: 850px;
+            margin: 55px auto 0;
+        }
+
+        .flags_container img{
+            height: 160px;
+        }
+
+        .flag_item{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        footer {
+            background-color: rgb(0, 36, 125);
+            padding: 30px;
+            margin-top: -10px;
+        }
+
+        footer p {
+            color: white;
+        }
+
+        h2[id]{
+            scroll-margin-top: 230px;
+        }
+
+        [alt="Stadion Principality"], [alt="The Titanic Museum"]{
+            height: 200px;
+        }
+
+        [alt="Edinburgh Castle"]{
+            height: 270px;
+        }
+
+        [alt="Big Ben"]{
+            height: 475px;
+        }
+
+        [alt="St. Patrick's Cathedral"]{
+            height: 400px;
+        }
+
+        [alt="Istana Westminster"]{
+            height: 190px;
+        }
+
+        aside{
+            width: 500px;
+            padding: 42px 0 20px;
+            margin-top: 6.5rem;
+            border-left: 5px solid red;
+        }
+
+        .content{
+            margin-top: 6.5rem;
+        }
+
+        @media screen and (max-width: 768px){
+            .flags_container{
+                width: 100%;
+                gap: 15px;
+            }
+
+            .flag_item{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .flags_container img{
+                height: 100px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            main {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            aside {
+                width: 100%;
+                margin-top: 20px;
+                border-top: 5px solid red;
+                border-left: none;
+            }
+
+            [alt="UK flag"]{
+                max-width: 100%;
+                height: auto;
+                margin-top: 7rem;
+
+            }
+
+            [alt="British Isles"]{
+                width: 250px;
+            }
+
+            header {
+                height: auto;
+                padding: 15px 0;
+            }
+
+            aside img {
+                max-width: 100%;
+                height: auto;
+            }
+            
+            article {
+                width: 100%;
+            }
+
+            h2[id]{
+                scroll-margin-top: 275px;
+            }
+        }
+    </style>
+    <title>Beranda</title>
+</head>
+<body>
+    <header>
+        <h1>PERBEDAAN UNITED KINGDOM, INGGRIS, <br> DAN BRITANIA RAYA </h1>
+        <nav>
+        <ul>
+            <li><a href="#britania-raya">APA ITU BRITANIA RAYA ?</a></li>
+            <li><a href="#inggris">APA ITU INGGRIS ?</a></li>
+            <li><a href="#uk">APA ITU UNITED KINGDOM ?</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <article>
+                <figure class="ukFlag_container">
+                    <img src="images/uk_flag.jpg" alt="UK flag">
+                </figure>
+
+                <p>
+                    Bendera apa yang sedang kalian lihat ? pasti kalian akan menjawab Inggris, kan ? Jika jawaban Anda adalah Inggris, Anda tidak sendirian. Banyak orang memiliki anggapan yang sama. Namun, bendera ini adalah Union Jack, yang merupakan bendera resmi United Kingdom. Lalu, apa bedanya Inggris dan United Kingdom? Dan dalam pembahasan ini juga, saya akan membahas Britania Raya. Apa itu Britania Raya? Mari kita bahas satu per satu.
+                </p>
+            </article>
+
+            <article>
+                <h2 id="britania-raya">Apa itu Britania Raya ?</h2>
+                <p>
+                    Sebelum kita membahas apa itu Britania Raya, kita harus tahu dulu apa itu British Isles. British Isles atau dalam Bahasa Indonesia Kepulauan Britania adalah sebuah kepulauan yang terdiri dari dua pulau utama, yaitu Pulau Britania Raya dan Pulau Irlandia. Kepulauan ini terletak di sebelah barat laut benua Eropa.
+                </p>
+
+                <p>
+                    Setelah memahami apa itu British Isles, sekarang mari kita fokus pada salah satu pulau utamanya, yaitu Pulau Britania Raya. Britania Raya adalah sebuah pulau terbesar pertama yang terdiri dari tiga negara, yaitu Inggris, Skotlandia, dan Wales.
+                </p>
+
+                <p>
+                    Sementara itu, Pulau Irlandia adalah pulau terbesar kedua di British Isles. Di Pulau ini ada dua negara, yaitu Republik Irlandia atau sering disebut Irlandia dan Irlandia Utara. Penting untuk dicatat bahwa Republik Irlandia adalah negara berdaulat yang terpisah dari United Kingdom.
+                </p>
+
+                <figure class="britishIslesMap_container">
+                    <img src="images/british_isles.png" alt="British Isles">
+                    <figcaption>British Isles</figcaption>
+                </figure>
+
+                <figure class="flags_container">
+                    <div class="flag_item">
+                        <img src="images/england_flag.jpg" alt="England flag">
+                        <figcaption>Bendera Inggris</figcaption>
+                    </div>
+
+                    <div class="flag_item">
+                        <img src="images/scotland_flag.jpg" alt="Scotland flag">
+                        <figcaption>Bendera Skotlandia</figcaption>
+                    </div>
+
+                    <div class="flag_item">
+                        <img src="images/wales_flag.jpg" alt="Wales flag">
+                        <figcaption>Bendera Wales</figcaption>
+                    </div>
+
+                    <div class="flag_item">
+                        <img src="images/northernIreland_flag.jpg" alt="Northern Ireland flag">
+                        <figcaption>Bendera Irlandia Utara</figcaption>
+                    </div>
+
+                    <div class="flag_item">
+                        <img src="images/ireland_flag.jpg" alt="Ireland flag">
+                        <figcaption>Bendera Republik Irlandia</figcaption>
+                    </div>
+                </figure>
+            </article>
+
+            <article>
+                <h2 id="inggris">Apa itu Inggris ?</h2>
+                <p>
+                    Inggris merupakan negara konstituen bagian dari United Kingdom. Apa yang dimaksud dengan negara konstituen? Jawabannya akan kita bahas tuntas di segmen apa itu United Kingdom.
+                </p>
+            </article>
+
+            <article>
+                <h2 id="uk">Apa itu United Kingdom ?</h2>
+                <p>
+                    United Kingdom atau bisa disingkat menjadi UK adalah negara yang disusun oleh 4 negara konstituen, yaitu Inggris, Skotlandia, Wales, dan Irlandia Utara.
+                </p>
+
+                <p>
+                    Negara konstituen adalah sebuah negara yang memiliki identitas nasional, budaya, dan sering kali sistem hukum yang berbeda, namun merupakan penyusun dari sebuah negara berdaulat (sebuah negara yang lebih besar).
+                </p>
+            </article>
+        </div>
+
+        <aside>
+            <figure class="england-funfact">
+                <h2>Inggris</h2>
+                <img src="images/bigben.jpg" alt="Big Ben">
+                <figcaption>
+                    Salah satu bangunan paling ikonik : Big Ben
+                    <br>
+                    Ibu Kota : London
+                    <br>
+                    Bahasa Nasional : Bahasa Inggris
+                </figcaption>
+            </figure>
+
+            <figure class="scotland-funfact">
+                <h2>Skotlandia</h2>
+                <img src="images/edinburgh-castle.jpg" alt="Edinburgh Castle">
+                <figcaption>
+                    Salah satu bangunan paling ikonik : Edinburgh Castle
+                    <br>
+                    Ibu Kota : Edinburgh
+                    <br>
+                    Bahasa Nasional : Bahasa Inggris, Bahasa Skots, dan Bahasa Gaelik
+                </figcaption>
+            </figure>
+
+            <figure class="wales-funfact">
+                <h2>Wales</h2>
+                <img src="images/stadion-principality.jpg" alt="Stadion Principality">
+                <figcaption>
+                    Salah satu bangunan paling ikonik : Stadion Principality
+                    <br>
+                    Ibu Kota : Cardiff
+                    <br>
+                    Bahasa Nasional : Bahasa Inggris dan Bahasa Wales
+                </figcaption>
+            </figure>
+
+            <figure class="northerIreland-funfact">
+                <h2>Irlandia Utara</h2>
+                <img src="images/the-titanic-museum.jpg" alt="The Titanic Museum">
+                <figcaption>
+                    Salah satu bangunan paling ikonik : The Titanic Museum
+                    <br>
+                    Ibu Kota : Belfast
+                    <br>
+                    Bahasa Nasional : Bahasa Inggris adalah bahasa utama karena digunakan oleh mayoritas penduduknya. Namun, Bahasa Irlandia dan Skots Ulster (variasi lokal Bahasa Skotlandia) adalah bahasa resmi minoritas.
+                </figcaption>
+            </figure>
+
+            <figure class="ireland-funfact">
+                <h2>Republik Irlandia</h2>
+                <img src="images/stpatricks-cathedral.jpg" alt="St. Patrick's Cathedral">
+                <figcaption>
+                    Salah satu bangunan paling ikonik : St. Patrick's Cathedral
+                    <br>
+                    Ibu Kota : Dublin
+                    <br>
+                    Bahasa Nasional : Bahasa Irlandia dan Bahasa Inggris
+                </figcaption>
+            </figure>
+
+            <figure class="uk-funfact">
+                <h2>United Kingdom</h2>
+                <img src="images/istana_westminster.jpg" alt="Istana Westminster">
+                <figcaption>
+                    Salah satu bangunan paling ikonik : Istana Westminster
+                    <br>
+                    Ibu Kota : London
+                    <br>
+                    Bahasa Nasional : Bahasa Inggris
+                </figcaption>
+            </figure>
+        </aside>
+    </main>
+
+    <footer><p>&copy; 2025 VALX.</p></footer>
+</body>
+</html>
